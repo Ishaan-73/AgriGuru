@@ -1,0 +1,24 @@
+@media screen and (min-width: 320px) and (max-width: 375px) {
+    .card-class{
+        height:90%;
+    }
+}
+@media screen and (min-width: 375px) and (max-width: 425px) {
+    .card-class{
+        height:90%;
+    }
+}
+@media only screen and (min-width: 425px) {
+    .card-class{
+        height:90%;
+    }
+}
+
+@media screen and (min-height: 600px) and (max-height: 780px) {
+    .height-class{
+        font-size: 12px;
+    }
+    .height-heading-class{
+        font-size: 22px;
+    }
+}

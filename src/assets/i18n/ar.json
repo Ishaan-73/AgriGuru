@@ -1,0 +1,62 @@
+{
+  "Welcome to Garageplug" : "مرحبًا بكم في Garageplug",
+  "Your One-Stop Solution For All Vehicle Trouble." : "الحل الشامل لجميع مشاكل السيارة.",
+  "Get Started" : "البدء",
+
+  "Mobile Number" : "رقم الهاتف المحمول",
+  "Enter Your Details" : "أدخل التفاصيل الخاصة بك",
+  "We will send you a " : "سوف نرسل لك ملف",
+  "6 digit-OTP " : "6 أرقام- OTP",
+  "confirmation code" : "تأكيد الكود",
+  "I agree to the" : "أنا أوافق على",
+  "Terms and Conditions" : "الأحكام والشروط",
+  "Get OTP" : "احصل على OTP",
+
+  "OTP Verification" : "التحقق من OTP",
+  "Enter the verification code we just sent to your number" : "أدخل رمز التحقق الذي أرسلناه للتو إلى رقمك",
+  "Resending OTP in" : "إعادة إرسال OTP بتنسيق",
+  "Did not recieve OTP? " : "لم تستلم OTP؟",
+  "Resend OTP" : "إعادة إرسال OTP",
+  "Verify" : "يؤكد",
+
+  "Select Your Vehicle" : "حدد سيارتك",
+  "Select your vehicle to find all the vehicle trouble that you want to find." : "حدد سيارتك للعثور على جميع مشاكل السيارة التي تريد العثور عليها.",
+  "No Vehicle Selected" : "لم يتم اختيار أي مركبة",
+  "Brand" : "ماركة",
+  "Select the brand name" : "حدد اسم العلامة التجارية",
+  "Select the model name" : "حدد اسم الطراز",
+  "Model" : "نموذج",
+  "Submit" : "يُقدِّم",
+
+  "GaragePlug AutoBot" : "GaragePlug AutoBot",
+  "Your Vehicle AI Assistant" : "مساعد الذكاء الاصطناعي في سيارتك",
+  "Using this software, you can ask you questions" : "باستخدام هذا البرنامج ، يمكنك طرح الأسئلة عليك",
+  " and receive articles using artificial intelligence assistant": "وتلقي المقالات باستخدام مساعد الذكاء الاصطناعي",
+  "Quick Ask" : "اسأل سريع",
+  "How do I check my car's fluid levels?" : "كيف أتحقق من مستويات السوائل في سيارتي؟",
+  " car's fluid levels?" : "مستويات السوائل في السيارة؟",
+  "What should I do if my car is overheating?" : "ماذا أفعل إذا ارتفعت درجة حرارة سيارتي؟",
+  "Why won't my car start?" : "لماذا لا تعمل سيارتي؟",
+  "Type your problem" : "اكتب مشكلتك",
+
+  "Profile" : "حساب تعريفي",
+  "PROFILE DETAIL" : "تفاصيل الملف الشخصي",
+  "Email" : "بريد إلكتروني",
+  "Phone" : "هاتف",
+  "Select Language" : "اختار اللغة",
+  "Logout" : "تسجيل خروج",
+
+  "Cancel" : "يلغي",
+  "OK" : "نعم",
+  "Confirmation" : "تأكيد",
+  "Are you sure you want to logout?" : "هل أنت متأكد أنك تريد تسجيل الخروج؟",
+
+  "English" : "إنجليزي",
+  " English " : " إنجليزي ",
+  "Arabic" : "عربي",
+  " Arabic " : " عربي "
+
+
+
+
+}

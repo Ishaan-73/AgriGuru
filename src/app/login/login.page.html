@@ -1,0 +1,51 @@
+<ion-grid style="height:100%; display: flex;flex-direction: column;background-color:white;">
+
+
+  <ion-row style="margin-top: 50%;">
+    <ion-col offset="0.5" class="ion-text-center">
+      <!-- <h1 style="color: #1E232C; font-weight: bold; font-size: 30px;">{{ 'Enter Your Details' | translate}}</h1> -->
+      <h1 style="color: #1E232C; font-weight: bold; font-size: 30px;">LOGIN</h1>
+    </ion-col>
+  </ion-row>
+
+  <ion-row><ion-col></ion-col></ion-row>
+  <ion-row><ion-col></ion-col></ion-row>
+  
+  <ion-row>
+    <ion-col offset="0.5" size="11">
+      <ion-item [class.custom-select]="!isSelected2" [class.custom-select-selected]="isSelected2" (ionChange)="changeisSelected2()">
+        <ion-input type="text" name="email" #email placeholder="{{'Email'|translate}}"></ion-input>
+      </ion-item>
+    </ion-col>
+  </ion-row>
+
+  <ion-row>
+    <ion-col offset="0.5" size="11">
+      <ion-item [class.custom-select]="!isSelected1" [class.custom-select-selected]="isSelected1" (ionChange)="changeisSelected1()">
+        <ion-input type="password" name="password" #password placeholder="Password"></ion-input>
+      </ion-item>
+    </ion-col>
+  </ion-row>
+  
+
+  <ion-row><ion-col></ion-col></ion-row>
+
+  
+
+
+  <ion-row><ion-col></ion-col></ion-row>
+  <ion-row><ion-col></ion-col></ion-row>
+  <ion-row><ion-col></ion-col></ion-row>
+
+  <ion-row style="position:absolute; bottom: 5%; width:100%;display:flex;justify-content: center;">
+    <ion-col class="ion-text-center" size="10">
+      <ion-button [disabled]="!isSelected1" style="--background: #188F79;color: white;width:100%;--border-radius:100px;height:50px;" (click)="sendOTP()">
+        Submit
+      </ion-button>
+    </ion-col>
+  </ion-row>
+
+
+</ion-grid>
+
+

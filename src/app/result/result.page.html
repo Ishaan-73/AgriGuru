@@ -1,0 +1,272 @@
+<ion-content style="--background:#188F79">
+  <ion-row>
+
+      <ion-col size="2" style="display:flex; justify-content: center; align-items: center;">
+        <ion-icon name="chevron-back" style="color:white;font-size: x-large;" (click)="backToSpeaking()"></ion-icon>
+      </ion-col>
+      
+
+    <ion-col size="2" style="display:flex; justify-content: start; align-items: center;">
+        <ion-img src="/assets/Group.svg" style="height:45px;width:45px;background-color: white;border-radius: 100%;padding:4px;"></ion-img>
+    </ion-col>
+
+    <ion-col size="6" class="ion-text-start">
+      <p style="font-size: 22px;font-weight: 600;color: white;">AgriHealth Guru</p>
+    </ion-col>
+
+    <ion-col size="2" style="display:flex; justify-content: start; align-items: center;">
+        <ion-icon *ngIf="speaking" name="volume-high" (click)="textToSpeech()" style="color:white;font-size: 28px;"></ion-icon>
+        <ion-icon *ngIf="!speaking" name="volume-mute" (click)="textToSpeech()" style="color:white;font-size: 28px;"></ion-icon>
+    </ion-col>
+
+  </ion-row>
+  
+
+  <!-- <ion-card style="box-shadow: rgb(0 0 0 / 16%) 0px 1px 4px;background-color: rgba(255, 255, 255, 0.40);margin-top:0;">
+    <ion-row>
+      <ion-col size="8">
+        <ion-row>
+          <ion-col>                    
+            <p style="display:inline;font-weight:400;font-size: 14px;color:white">{{'Brand' | translate}}: </p> <p style="font-weight: bold;display: inline;font-weight:800;font-size: 14px;color:white">{{ brand }}</p>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col>
+            <p style="display:inline;font-weight:400;font-size: 14px;color:white">{{'Model' | translate}}: </p> <p style="font-weight: bold;display: inline;font-weight:800;font-size: 14px;color:white">{{ model }}</p>
+          </ion-col>
+        </ion-row>
+      </ion-col>
+      <ion-col style="display:flex; justify-content: end; align-items: center;">
+          <ion-icon name="create" (click)="editCar()" style="color:white; font-size:xx-large;"></ion-icon>
+      </ion-col>
+    </ion-row>
+  </ion-card> -->
+
+
+   <ion-card style="background-color: #FAFAFA; margin:0; border-radius: 50px 50px 0px 0px;position:absolute;bottom:0;width:100%;" class="card-class">
+    <ion-grid style="display: flex;flex-direction: column;height:100%;">
+
+      <ion-row style="overflow: auto;">
+        <ion-col>
+
+          <ion-row><ion-col></ion-col></ion-row>
+          <ion-row><ion-col></ion-col></ion-row>
+          <ion-row><ion-col></ion-col></ion-row>
+          <ion-row><ion-col></ion-col></ion-row>
+    
+        <ion-row>
+          <ion-col size="8.5" offset="3" style="background-color: #188F79;border-radius: 25px 0px 25px 25px;" class="ion-text-center">
+            <p style="color:white;font-size: 13px;font-weight: 700;">{{ message2 }}</p>
+          </ion-col>
+        </ion-row>
+    
+        <ion-row><ion-col></ion-col></ion-row>
+        <ion-row><ion-col></ion-col></ion-row>
+    
+        <ion-row>
+          <ion-col size="1.5" style="display:flex;justify-content: center; align-items: end;">
+            <ion-img src="/assets/Group.svg" style="height:30px;width:30px;background-color: white;border-radius: 100%;padding:2px;"></ion-img>
+          </ion-col>
+    
+          
+          <ion-col size="9" style="background-color: #EEE;border-radius: 25px 25px 25px 0px;">
+            <div [innerHTML]="innerHtml" style="color:#505050;font-size: 16px;padding:0; margin:0;" id="response"></div>
+          </ion-col>
+          
+        </ion-row>
+
+
+        <ion-row><ion-col></ion-col></ion-row>
+        <ion-row><ion-col></ion-col></ion-row>
+        <ion-row><ion-col></ion-col></ion-row>
+        <ion-row><ion-col></ion-col></ion-row>
+        <ion-row><ion-col></ion-col></ion-row>
+        <ion-row><ion-col></ion-col></ion-row>
+        <ion-row><ion-col></ion-col></ion-row>
+        <ion-row><ion-col></ion-col></ion-row>
+        <ion-row><ion-col></ion-col></ion-row>
+        <ion-row><ion-col></ion-col></ion-row>
+
+        </ion-col>
+      </ion-row>
+
+
+      <!-- <ion-row>
+        <ion-col class="ion-text-center" offset="1" size="10">
+          <h1 style="color:#188F79;" class="height-heading-class">Your Vehicle AI Assistant</h1>
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col class="ion-text-center" offset="1" size="10" >
+          <p style="color: #757575;font-size: 14px;font-weight: 400;">
+            Using this software,  you can ask you questions and receive articles using artificial intelligence assistant
+          </p>
+        </ion-col>
+      </ion-row>
+
+      <ion-row><ion-col></ion-col></ion-row>
+      <ion-row><ion-col></ion-col></ion-row>
+      
+
+
+      <ion-row>
+        <ion-col class="ion-text-center">
+          <ion-icon name="chatbubbles-outline" size="large"></ion-icon>
+          <p style="color:#3F3F3F;font-size: 14px;font-weight: 700;" class="height-class">Quick Ask</p>
+        </ion-col>
+      </ion-row>
+
+
+      <ion-row>
+        <ion-col offset="1" size="10" style="border-radius: 30px; background-color: #F4F4F4;" class="ion-text-center">
+          <p style="color: #3E3E3E;font-size: 14px;font-weight: 500;" (click)="Q1()" class="height-class">
+            How do I check my car's fluid levels?
+          </p>
+        </ion-col>
+      </ion-row>
+
+      <ion-row><ion-col></ion-col></ion-row>
+
+      <ion-row>
+        <ion-col offset="1" size="10" style="border-radius: 30px; background-color: #F4F4F4;" class="ion-text-center">
+          <p style="color: #3E3E3E;font-size: 14px;font-weight: 500;" (click)="Q2()" class="height-class">
+            What should I do if my car is overheating?
+          </p>
+        </ion-col>
+      </ion-row>
+
+      <ion-row><ion-col></ion-col></ion-row>
+
+      <ion-row>
+        <ion-col offset="1" size="10" style="border-radius: 30px; background-color: #F4F4F4;" class="ion-text-center">
+          <p style="color: #3E3E3E;font-size: 14px;font-weight: 500;" (click)="Q3()" class="height-class">
+            Why won't my car start?
+          </p>
+        </ion-col>
+      </ion-row> -->
+
+      <ion-row style="position:absolute; bottom: 5%; width:100%;display:flex;justify-content: center;">
+        <ion-col size="10" style="border-radius: 30px; background-color: white;box-shadow: 5px 4px 20px 0px rgba(0, 0, 0, 0.13);">
+          <ion-row>
+
+          
+          <ion-col size="8" style="display:flex; align-items: center;">
+            <ion-textarea rows="1" placeholder="{{'Type your problem' | translate}}" #queryRef [(ngModel)]="message" style="background-color: white; color: black; width:100%; border-radius: 10%;--border-color:black; "></ion-textarea>
+          </ion-col>
+
+          <ion-col size="2" style="display:flex; justify-content: center; align-items: center;">
+              <ion-icon name="mic-outline" style="border-radius: 100%; color:#CECECE;font-size: 30px;" (click)="recordAudio()"></ion-icon>
+          </ion-col>
+
+          <ion-col size="2" style="display:flex; justify-content: center; align-items: center;">
+              <ion-icon name="send" style="--background: transparent; color:#188F79;border-radius: 100%;font-size: 24px;" (click)="submitQuery()"></ion-icon>
+          </ion-col>
+        </ion-row>
+
+        </ion-col>
+        
+      </ion-row>
+    </ion-grid>
+  </ion-card>
+
+
+
+      
+
+
+</ion-content>
+
+
+
+
+
+
+<!-- <ion-header [translucent]="true" style="--ion-background-color: #50C878;">
+
+
+<ion-header [translucent]="true" style="--ion-background-color: #3D998F;">
+  <ion-toolbar style="color: white;">
+    <ion-buttons slot="start">
+      <ion-button (click)="backToSpeaking()">
+        <ion-icon name="arrow-back"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>Autobot</ion-title>
+    <ion-buttons slot="end">
+      <ion-button id="logout" (click)="LOGOUT()">
+        <ion-icon name="log-out"></ion-icon>
+        <ion-label>Logout</ion-label>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" style="--ion-background-color: white;">
+  <ion-grid>
+
+    <ion-row>
+      <ion-col offset="0.5" style="margin-right: 3%;">
+        <ion-card style="box-shadow: rgb(0 0 0 / 16%) 0px 1px 4px;">
+          <ion-row>
+            <ion-col size="8">
+              <ion-row>
+                <ion-col>                    
+                  <p style="display:inline">Brand: </p> <p style="font-weight: bold;display: inline;">{{ brand }}</p>
+                </ion-col>
+              </ion-row>
+              <ion-row>
+                <ion-col>
+                  <p style="display:inline">Model: </p> <p style="font-weight: bold;display: inline;">{{ model }}</p>
+                </ion-col>
+              </ion-row>
+            </ion-col>
+            <ion-col style="display:flex; justify-content: center; align-items: center;">
+              <ion-button style="--background: #3D998F;" (click)="editCar()">Edit</ion-button>
+             <p style="font-size: 16px;" (click)="editCar()">Edit</p>
+            </ion-col>
+          </ion-row>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+
+
+    <ion-row>
+      <ion-col offset="0.5" style="margin-right: 3%;">
+        <ion-card style="box-shadow: rgb(0 0 0 / 16%) 0px 1px 4px;">
+          <ion-card-content style="background-color: whitesmoke;">
+            <h2 style="font-weight: 900;color: black; font-size: 20px;">Question:</h2>
+            <p style="color: black; font-size: 16px;">{{ question }}</p>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+
+
+    <ion-row>
+      <ion-col offset="0.5" style="margin-right: 3%;">
+        <ion-card style="box-shadow: rgb(0 0 0 / 16%) 0px 1px 4px;">
+          <ion-card-content style="background-color: whitesmoke;">
+            <h2 style="font-weight: 900;color: black; font-size: 20px;">Response: 
+              <ion-button (click)="textToSpeech()" style="--background:#3D998F;">
+                <ion-icon name="volume-high" size="small"></ion-icon>
+              </ion-button>
+            </h2>
+            <div [innerHTML]="innerHtml" style="color:black;font-size: 16px;padding:0; margin:0;" id="response"></div>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col offset="1">
+        <p>Have another question?</p>
+      </ion-col>
+      <ion-col>
+        <ion-button style="--background: #3D998F;" (click)="anotherQuestion()">Ask</ion-button>
+      </ion-col>
+    </ion-row>
+
+  </ion-grid>
+  
+</ion-content> -->

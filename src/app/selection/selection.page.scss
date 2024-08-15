@@ -1,0 +1,25 @@
+.selected-class{
+    border-radius: 8px;
+    border: 2px solid var(--primary, #188F79);
+    --background: rgba(213, 239, 238, 0.50);
+    color:#188F79;
+    font-size: 18px ;
+}
+
+.unselected-class{
+    border-radius: 10px;
+    border: 2px solid rgba(0, 0, 0, 0.10);
+    color:black;
+    --background: white;
+}
+
+
+// .custom-ion-select .select-icon{
+//     display: flex;
+//     align-items: center;
+//     justify-content: flex-end;
+// }
+
+:host ion-select-popover {
+    width: 85%;
+}

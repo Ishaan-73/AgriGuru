@@ -1,0 +1,43 @@
+<ion-grid style="height:100%;display:flex; flex-direction: column;overflow: auto;background-color:white;">
+
+  <ion-row>
+    <ion-col size="3" offset="9">
+      <ion-select [placeholder]=" storedLang ? storedLang : 'English'" #lang (ionChange)="langSelected(lang.value)" toggleIcon="chevron-down-outline"
+      style="border-radius: 6px;border: 2px solid rgba(0, 0, 0, 0.10);display: flex;justify-content: center;align-items: center;min-height: 40px;color:#80807F;">
+        <ion-select-option *ngFor="let lang of languages" style="color: #80807F;font-size: 14px;font-weight: 400;">
+          {{ lang }}
+        </ion-select-option>
+      </ion-select>
+    </ion-col>
+  </ion-row>
+
+  <ion-row>
+    <ion-col>
+      <ion-img src="/assets/gp.png" style="margin-top:10px;"></ion-img>
+    </ion-col>
+  </ion-row>
+
+  <ion-row>
+    <ion-col>
+      <ion-img src="/assets/Innovation-pana-2.svg"></ion-img>
+    </ion-col>
+  </ion-row>
+
+
+  
+
+  <ion-row>
+    <ion-col class="ion-text-center">
+      <h1 style="color: #1E232C;font-weight: 600;">{{'Welcome to Garageplug' | translate}}</h1>
+      <p style="color: #80807F;font-weight:400;">{{'Your One-Stop Solution For All Vehicle Trouble.' | translate}}</p>
+    </ion-col>
+  </ion-row>
+
+  <ion-row><ion-col></ion-col></ion-row>
+
+  <ion-row>
+    <ion-col class="ion-text-center">
+      <button class="getStartedButton" (click)="getStartedClicked()">{{'Get Started' | translate}}</button>
+    </ion-col>
+  </ion-row>
+</ion-grid>

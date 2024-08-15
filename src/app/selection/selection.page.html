@@ -1,0 +1,229 @@
+<!-- <ion-header [translucent]="true" style="--ion-background-color: #50C878;"> -->
+<!-- <ion-header style="--background: #188F79;">
+  <ion-toolbar style="color: white;--background: #188F79;">
+    <ion-title style="font-size: 20px;">Selection</ion-title>
+    <ion-buttons slot="end">
+      <ion-button id="logout" (click)="LOGOUT()" style="color:white;">
+        <ion-icon name="log-out"></ion-icon>
+        <ion-label>Logout</ion-label>
+      </ion-button>
+    </ion-buttons>
+   <ion-alert
+      trigger="logout"
+      header="Do you want to logout?"
+      [buttons]="logoutButtons"
+    ></ion-alert>
+  </ion-toolbar>
+
+</ion-header> -->
+
+
+<!-- <ion-content style="--ion-background-color: white"> -->
+  <!-- <ion-grid style="padding-bottom: 0%;">
+    <ion-row>
+      <ion-col>
+        <ion-card>
+            <ion-grid style="background-color: #3A3B3C;">
+            <ion-row>
+              <ion-col offset="2">
+                <span>
+                  <p style="display: inline; font-size: 20px; color:white">Welcome back, </p>
+                  <p style="display: inline;font-size: 24px; font-weight: bold; color: white;">Shreyas!</p>
+                </span>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid> -->
+
+  <ion-content style="--background:#188F79">
+    <ion-row>
+      <ion-buttons style="margin-left:10px;">
+        <ion-menu-button style="color:white;"></ion-menu-button>
+      </ion-buttons>
+      <ion-col class="ion-text-center">
+        <p style="font-size: 22px;font-weight: 600;color: white;">AgriHealth Guru</p>
+      </ion-col>
+    </ion-row>
+
+<div style="background-image: url('/assets/Background.png');
+background-size: cover;
+background-repeat: no-repeat;
+background-position: center;
+height: 100%;
+display: flex;
+justify-content: center;">
+
+  <div>
+    <webcam [height]="500" [width]="500" [trigger]="triggerObservable" (imageCapture)="handleImage($event)" *ngIf="showWebcam && !picTaken"
+            [allowCameraSwitch]="allowCameraSwitch" [switchCamera]="nextWebcamObservable"
+            [videoOptions]="videoOptions"
+            [imageQuality]="1"
+            (cameraSwitched)="cameraWasSwitched($event)"
+            (initError)="handleInitError($event)"
+    ></webcam>
+    <br/>
+    <div style="display: flex;
+    justify-content: center;">
+      <ion-button (click)="triggerSnapshot();" *ngIf="showWebcam && !picTaken">Take A Snapshot</ion-button>
+      <ion-button (click)="toggleWebcam();" style="--background: #188F79">Toggle Webcam</ion-button>
+    </div>
+    <br/>
+
+    <div class="snapshot" *ngIf="webcamImage">
+      <img [src]="webcamImage.imageAsDataUrl"/>
+    </div>
+
+    <div style="display:flex;text-align:center;flex-direction: column;">
+      <h1 style="color:black;">Upload Image</h1>
+      <input style="color:black;margin-left:50px;" type="file" (change)="onFileSelected($event)">
+    </div>
+    
+
+    <br>
+
+    <div style="display: flex;
+    justify-content: center;">
+      <ion-button (click)="submitImage();" *ngIf="picTaken || imageSrc">Submit</ion-button>
+    </div>
+
+    <ion-card *ngIf="submitted" style="background:white;padding: 10px; font: roboto;">
+      <p style="color: black; font-size: 16px;">Disease : {{ message2 }}</p>
+      <p style="color: black; font-size: 16px;">Recommended Treatment: </p>
+      <p style="color: black; font-size: 16px;">{{ message3 }}</p>
+    </ion-card>
+    
+    
+
+
+    <!-- <img *ngIf="imageSrc" [src]="imageSrc" alt="Uploaded Image" width="300"> -->
+
+    <!-- <input type="file" (change)="onFileSelected($event)" accept="image/*">
+    <button (click)="uploadImage()">Upload</button>-->
+    <div style="display: flex; justify-content: center;">
+      <img *ngIf="imageUrl && submitted" [src]="imageUrl" alt="Uploaded Image"> 
+    </div>
+
+    <div style="display: flex; justify-content: center;" *ngIf="imageUrl && submitted">
+      <ion-button (click)="clickExpert()">Talk to Experts</ion-button>
+    </div>
+    
+    <!-- <h1 style="color: black;">
+      Message from Flask: {{ message }}
+    </h1> -->
+
+
+
+    <!-- <button class="actionBtn" (click)="showNextWebcam(true);" [disabled]="!multipleWebcamsAvailable">Next Webcam</button>
+    <input id="cameraSwitchCheckbox" type="checkbox" [(ngModel)]="allowCameraSwitch"><label for="cameraSwitchCheckbox">Allow Camera Switch</label>
+    <br/>
+    DeviceId: <input id="deviceId" type="text" [(ngModel)]="deviceId" style="width: 500px">
+    <button (click)="showNextWebcam(deviceId);">Activate</button> -->
+  </div>
+
+
+
+
+  <!-- <ion-grid syle="height:100%; display: flex;flex-direction: column;">
+
+    <ion-row><ion-col></ion-col></ion-row>
+    <ion-row><ion-col></ion-col></ion-row>
+
+    <ion-row>
+      <ion-col offset="0.5">
+        <h1 style="color: #1E232C; font-weight: bold; font-size: 30px;">{{'Select Your Vehicle' | translate}}</h1>
+      </ion-col>
+    </ion-row>
+  
+    <ion-row>
+      <ion-col offset="0.5" size="11">
+        <p style="color:#80807F; font-size: 14px;font-weight: 400;">
+          {{'Select your vehicle to find all the vehicle trouble that you want to find.' | translate}}
+        </p>
+      </ion-col>
+    </ion-row>
+
+
+    <ion-row *ngIf="!brandSelected && !modelSelected">
+      <ion-col class="ion-text-center">
+        <ion-card style="background-color:#D5EFEE ;border-radius: 8px;border: 2px solid #188F79;color: #188F79;">
+          <p style="font-size: 15px;font-weight: 400;">{{'No Vehicle Selected' | translate}}</p>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+
+    <ion-row *ngIf="brandSelected && !modelSelected">
+      <ion-col class="ion-text-center">
+        <ion-card 
+        style="background-color:#D5EFEE ;border-radius: 8px;border: 2px solid #188F79;color: #188F79;;height:50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;">
+          <p style="font-size: 15px;font-weight: 400;display:inline;">{{'Brand' | translate}}: </p>
+          <p style="font-size: 15px;font-weight: 800;display:inline;">{{ selectedBrand }}</p>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+
+    <ion-row *ngIf="brandSelected && modelSelected">
+      <ion-col offset="0.5"  size="11" class="ion-text-center" style="background-color:#D5EFEE ;border-radius: 8px;border: 2px solid #188F79;color: #188F79;">
+        <p style="font-size: 15px;font-weight: 400;display:inline;">{{'Brand' | translate}}: </p>
+        <p style="font-size: 15px;font-weight: 800;display:inline;">{{ selectedBrand }}</p><br>
+        <p style="font-size: 15px;font-weight: 400;display:inline;">{{'Model' | translate}}: </p>
+        <p style="font-size: 15px;font-weight: 800;display:inline;">{{ selectedModel }}</p>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col offset="0.5" size="11">
+        <p style="color:#1E232C;font-size: 14px;font-weight: 500;">{{'Brand' | translate}}</p>
+        <ion-list style="background-color: white;">
+          <ion-item [class.selected-class]="brandSelected"  [class.unselected-class]="!brandSelected">
+            <ion-select placeholder="{{'Select the brand name' | translate}}"
+            toggleIcon="chevron-down-outline"
+            [interfaceOptions]="brandOptions"
+            cancelText="{{'Cancel' | translate}}" okText="{{'OK' | translate}}"
+             style="font-size: 15px;text-align: center;justify-content: center;"
+             #brandName
+             (ionChange)="brandNameSelected(brandName.value)"
+             [(ngModel)]="selectedBrand">
+              <ion-select-option *ngFor="let brand of allBrands">{{ brand.brand_name }}</ion-select-option>
+            </ion-select>
+          </ion-item>
+        </ion-list>
+      </ion-col>
+    </ion-row>
+
+
+    <ion-row *ngIf="brandSelected===true && allModels.length>0">
+      <ion-col offset="0.5" size="11">
+        <p style="color:#1E232C;font-size: 14px;font-weight: 500;">{{'Model' | translate}}</p>
+        <ion-list style="background-color: white;">
+          <ion-item [class.selected-class]="modelSelected"  [class.unselected-class]="!modelSelected">
+            <ion-select placeholder="{{'Select the model name' | translate}}"
+            toggleIcon="chevron-down-outline"
+            cancelText="{{'Cancel' | translate}}" okText="{{'OK' | translate}}"
+             style="font-size: 15px;text-align: center;justify-content: center;"
+             [interfaceOptions]="modelOptions"
+             #modelName
+             (ionChange)="modelNameSelected(modelName.value)"
+             [(ngModel)]="selectedModel">
+              <ion-select-option *ngFor="let model of allModels">{{ model.model_name }}</ion-select-option>
+            </ion-select>
+          </ion-item>
+        </ion-list>
+      </ion-col>
+    </ion-row> -->
+
+    <!-- <ion-row style="position:absolute; bottom: 5%; width:100%;display:flex;justify-content: center;">
+      <ion-col size="10">
+        <ion-button [disabled]="!modelSelected" style="--background: #188F79;color: white;width:100%;--border-radius:100px;"  (click)="carSelected()">{{'Submit' | translate}}</ion-button>
+      </ion-col>
+    </ion-row> -->
+
+
+  <!-- </ion-grid> -->
+  
+</div>

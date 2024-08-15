@@ -1,0 +1,185 @@
+{
+    "diseases": [
+      {
+        "name": "Tomato___Late_blight",
+        "symptoms": ["dark water-soaked spots on leaves", "fruit rot", "brown lesions on stems"],
+        "prevention": "Space plants for airflow, avoid overhead watering, use resistant varieties.",
+        "remedy": "Apply fungicides, remove infected plants, practice crop rotation."
+      },
+      {
+        "name": "Tomato___healthy",
+        "symptoms": ["No visible symptoms, plant is healthy."],
+        "prevention": "Regular watering, maintain soil health, provide proper sunlight.",
+        "remedy": "Continue with good care practices."
+      },
+      {
+        "name": "Grape___healthy",
+        "symptoms": ["No visible symptoms, plant is healthy."],
+        "prevention": "Provide adequate nutrients, prune regularly for air circulation.",
+        "remedy": "Continue with good care practices."
+      },
+      {
+        "name": "Orange___Haunglongbing_(Citrus_greening)",
+        "symptoms": ["yellowing leaves", "misshapen fruit", "fruit drop", "stunted growth"],
+        "prevention": "Use disease-free saplings, control psyllid populations.",
+        "remedy": "Remove and destroy infected trees, apply insecticides to control vectors."
+      },
+      {
+        "name": "Soybean___healthy",
+        "symptoms": ["No visible symptoms, plant is healthy."],
+        "prevention": "Ensure balanced soil nutrients and water regularly.",
+        "remedy": "Continue with good care practices."
+      },
+      {
+        "name": "Squash___Powdery_mildew",
+        "symptoms": ["white powdery spots on leaves", "leaf curl", "reduced growth"],
+        "prevention": "Space plants for airflow, avoid wetting the foliage.",
+        "remedy": "Apply sulfur-based fungicides, remove infected leaves."
+      },
+      {
+        "name": "Potato___healthy",
+        "symptoms": ["No visible symptoms, plant is healthy."],
+        "prevention": "Maintain good soil, provide adequate water and sunlight.",
+        "remedy": "Continue with good care practices."
+      },
+      {
+        "name": "Corn_(maize)___Northern_Leaf_Blight",
+        "symptoms": ["long gray-green lesions on leaves", "leaf blight", "yellowing leaves"],
+        "prevention": "Use resistant hybrids, rotate crops, avoid monoculture.",
+        "remedy": "Apply fungicides early, remove infected leaves."
+      },
+      {
+        "name": "Tomato___Early_blight",
+        "symptoms": ["brown spots on leaves with concentric rings", "leaf drop", "fruit lesions"],
+        "prevention": "Use mulch, rotate crops, avoid overhead watering.",
+        "remedy": "Apply fungicides, remove infected leaves."
+      },
+      {
+        "name": "Tomato___Septoria_leaf_spot",
+        "symptoms": ["small circular spots with dark borders on leaves", "leaf drop", "stunted growth"],
+        "prevention": "Rotate crops, ensure good air circulation, avoid leaf wetting.",
+        "remedy": "Apply copper-based fungicides, remove infected leaves."
+      },
+      {
+        "name": "Corn_(maize)___Cercospora_leaf_spot_Gray_leaf_spot",
+        "symptoms": ["small grayish-brown lesions on leaves", "leaf discoloration", "reduced yield"],
+        "prevention": "Use resistant hybrids, rotate crops regularly.",
+        "remedy": "Apply fungicides, remove and destroy affected leaves."
+      },
+      {
+        "name": "Strawberry___Leaf_scorch",
+        "symptoms": ["brown spots on leaves", "leaf curling", "scorched appearance"],
+        "prevention": "Ensure proper spacing, avoid overhead watering, prune for air circulation.",
+        "remedy": "Apply fungicides, remove affected leaves."
+      },
+      {
+        "name": "Peach___healthy",
+        "symptoms": ["No visible symptoms, plant is healthy."],
+        "prevention": "Regular watering, proper sunlight, and good soil maintenance.",
+        "remedy": "Continue with good care practices."
+      },
+      {
+        "name": "Apple___Apple_scab",
+        "symptoms": ["dark, velvety spots on leaves and fruit", "leaf drop", "deformed fruit"],
+        "prevention": "Use resistant varieties, prune trees for better air circulation.",
+        "remedy": "Apply fungicides, remove and destroy infected leaves and fruit."
+      },
+      {
+        "name": "Tomato___Tomato_Yellow_Leaf_Curl_Virus",
+        "symptoms": ["yellowing and curling of leaves", "stunted growth", "reduced yield"],
+        "prevention": "Control whiteflies, use virus-resistant varieties.",
+        "remedy": "Remove infected plants, apply insecticides to control vectors."
+      },
+      {
+        "name": "Tomato___Bacterial_spot",
+        "symptoms": ["water-soaked spots on leaves and fruit", "leaf drop", "fruit lesions"],
+        "prevention": "Rotate crops, avoid overhead watering, disinfect tools.",
+        "remedy": "Apply copper-based bactericides, remove and destroy infected plants."
+      },
+      {
+        "name": "Apple___Black_rot",
+        "symptoms": ["dark circular lesions on fruit", "leaf spots", "branch dieback"],
+        "prevention": "Prune trees for better air circulation, remove fallen fruit and leaves.",
+        "remedy": "Apply fungicides, prune infected branches."
+      },
+      {
+        "name": "Blueberry___healthy",
+        "symptoms": ["No visible symptoms, plant is healthy."],
+        "prevention": "Maintain proper soil acidity, water adequately, prune regularly.",
+        "remedy": "Continue with good care practices."
+      },
+      {
+        "name": "Cherry_(including_sour)___Powdery_mildew",
+        "symptoms": ["white powdery growth on leaves", "leaf curling", "reduced fruit quality"],
+        "prevention": "Ensure good air circulation, avoid leaf wetting.",
+        "remedy": "Apply fungicides, remove infected leaves."
+      },
+      {
+        "name": "Peach___Bacterial_spot",
+        "symptoms": ["small, dark spots on leaves and fruit", "leaf drop", "fruit lesions"],
+        "prevention": "Use resistant varieties, avoid leaf wetting.",
+        "remedy": "Apply copper-based bactericides, remove infected plants."
+      },
+      {
+        "name": "Apple___Cedar_apple_rust",
+        "symptoms": ["orange spots on leaves", "fruit deformities", "leaf drop"],
+        "prevention": "Use resistant varieties, remove nearby juniper hosts.",
+        "remedy": "Apply fungicides, remove affected leaves."
+      },
+      {
+        "name": "Tomato___Target_Spot",
+        "symptoms": ["brown spots with dark rings on leaves", "leaf drop", "fruit lesions"],
+        "prevention": "Rotate crops, prune for air circulation, avoid overhead watering.",
+        "remedy": "Apply fungicides, remove infected plants."
+      },
+      {
+        "name": "Pepper,_bell___healthy",
+        "symptoms": ["No visible symptoms, plant is healthy."],
+        "prevention": "Provide adequate water, sunlight, and nutrient-rich soil.",
+        "remedy": "Continue with good care practices."
+      },
+      {
+        "name": "Grape___Leaf_blight_(Isariopsis_Leaf_Spot)",
+        "symptoms": ["brown lesions on leaves", "leaf drop", "reduced yield"],
+        "prevention": "Ensure good air circulation, prune regularly.",
+        "remedy": "Apply fungicides, remove infected leaves."
+      },
+      {
+        "name": "Potato___Late_blight",
+        "symptoms": ["dark spots on leaves", "rotting tubers", "blackened stems"],
+        "prevention": "Use resistant varieties, avoid overhead watering.",
+        "remedy": "Apply fungicides, remove infected plants."
+      },
+      {
+        "name": "Tomato___Tomato_mosaic_virus",
+        "symptoms": ["mottled and distorted leaves", "stunted growth", "fruit deformities"],
+        "prevention": "Disinfect tools, avoid handling plants when wet.",
+        "remedy": "Remove infected plants, avoid tobacco contamination."
+      },
+      {
+        "name": "Strawberry___healthy",
+        "symptoms": ["No visible symptoms, plant is healthy."],
+        "prevention": "Provide adequate water, sunlight, and nutrient-rich soil.",
+        "remedy": "Continue with good care practices."
+      },
+      {
+        "name": "Apple___healthy",
+        "symptoms": ["No visible symptoms, plant is healthy."],
+        "prevention": "Maintain proper care, prune regularly, and water adequately.",
+        "remedy": "Continue with good care practices."
+      },
+      {
+        "name": "Grape___Black_rot",
+        "symptoms": ["small brown spots on leaves", "shriveling fruit", "leaf drop"],
+        "prevention": "Prune for air circulation, remove fallen leaves and fruit.",
+        "remedy": "Apply fungicides, remove and destroy infected plant parts."
+      },
+      {
+        "name": "Peach___healthy",
+        "symptoms": ["No visible symptoms, plant is healthy."],
+        "prevention": "Maintain proper care, water regularly, and prune for airflow.",
+        "remedy": "Continue with good care practices."
+      }
+    ]
+  }
+  

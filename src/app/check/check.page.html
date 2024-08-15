@@ -1,0 +1,33 @@
+<ion-content style="--background:#188F79">
+  <ion-row>
+    <ion-buttons style="margin-left:10px;">
+      <ion-menu-button style="color:white;"></ion-menu-button>
+    </ion-buttons>
+    <ion-col class="ion-text-center">
+      <p style="font-size: 22px;font-weight: 600;color: white;">AgriHealth Guru</p>
+    </ion-col>
+  </ion-row>
+
+<ion-grid style="background-image: url('/assets/Background.png');
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center;
+                height: 100%;
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                flex-direction: column;">
+
+  <ion-card style="background-color: white; display: flex; justify-content: space-around;">
+    <p style="font-size: 18px; font-weight: 500;color: black;">Temperature: </p>
+    <p style="font-size: 18px; font-weight: 500;color: rgb(91, 88, 88);">{{ temperature }}</p>
+  </ion-card>
+
+  <ion-card style="background-color: white; display: flex; justify-content: space-around;">
+    <p style="font-size: 18px; font-weight: 500;color: black;">Humidity: </p>
+    <p style="font-size: 18px; font-weight: 500;color: rgb(91, 88, 88);">{{ humidity }}</p>
+  </ion-card>
+
+  
+
+</ion-grid>

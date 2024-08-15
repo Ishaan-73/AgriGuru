@@ -1,0 +1,8 @@
+{
+  "name": "ITProject",
+  "integrations": {
+    "capacitor": {},
+    "cordova": {}
+  },
+  "type": "angular-standalone"
+}

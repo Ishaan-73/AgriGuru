@@ -1,0 +1,81 @@
+<ion-menu side="start" contentId="main-content">
+  <ion-content style="--background:white;">
+    <div style="display:flex; justify-content: end; align-items: center;border-radius: 0px 24px 0px 0px;background-color: white;">
+      <ion-menu-toggle>
+          <ion-button style="--background: white;box-shadow: none;border: none;">
+            <ion-icon name="chevron-back" style="color:#252525"></ion-icon>
+          </ion-button>
+      </ion-menu-toggle>
+    </div>
+  
+
+    <ion-row style="background-color:white;"><ion-col></ion-col></ion-row>
+    <div class="line"></div>
+    <ion-row style="background-color:white;"><ion-col></ion-col></ion-row>
+
+    <ion-menu-toggle>
+      <ion-row style="background-color:white;" (click)="clickSelection()">
+        <ion-col size="2" offset="0.5" style="display: flex;justify-content: center;align-items: center;">
+          <ion-icon name="camera-outline" style="color:#161616; width: 20px; height: 20px;"></ion-icon>
+        </ion-col>
+        <ion-col>
+          <p style="color:#161616;font-size:16px;font-weight: 500;display:inline;" id="menuTabs">Webcam</p>
+        </ion-col>
+      </ion-row>
+    </ion-menu-toggle>
+
+    <ion-row style="background-color:white;"><ion-col></ion-col></ion-row>
+    <div class="line"></div>
+    <ion-row style="background-color:white;"><ion-col></ion-col></ion-row>
+
+  <ion-menu-toggle>
+    <ion-row style="background-color:white;" (click)="clickSpeaking()">
+      <ion-col size="2" offset="0.5" style="display: flex;justify-content: center;align-items: center;">
+        <ion-icon name="chatbox-ellipses-outline" style="color:#161616;width: 20px; height: 20px;"></ion-icon>
+      </ion-col>
+      <ion-col>
+        <p style="color:#161616;font-size:16px;font-weight: 500;display:inline;" id="menuTabs">Chatbot</p>
+      </ion-col>
+    </ion-row>
+  </ion-menu-toggle>
+
+    <ion-row style="background-color:white;"><ion-col></ion-col></ion-row>
+    <div class="line"></div>
+    <ion-row style="background-color:white;"><ion-col></ion-col></ion-row>
+
+  <!-- <ion-menu-toggle>
+    <ion-row style="background-color:white;" (click)="clickCheck()">
+      <ion-col size="2" offset="0.5" style="display: flex;justify-content: center;align-items: center;">
+        <ion-icon name="chatbubbles-outline" style="color:#161616;width: 20px; height: 20px;"></ion-icon>
+      </ion-col>
+      <ion-col>
+        <p style="color:#161616;font-size:16px;font-weight: 500;display:inline;" id="menuTabs">Conditions</p>
+      </ion-col>
+    </ion-row>
+  </ion-menu-toggle> -->
+
+    <ion-row style="background-color:white;"><ion-col></ion-col></ion-row>
+    <div class="line"></div>
+    <ion-row style="background-color:white;"><ion-col></ion-col></ion-row>
+
+    <!-- <ion-menu-toggle>
+      <ion-row style="background-color:white;" (click)="clickLogout()">
+        <ion-col size="2" offset="0.5" style="display: flex;justify-content: center;align-items: center;">
+          <ion-icon name="log-out" style="color:#161616;"></ion-icon>
+        </ion-col>
+        <ion-col>
+          <p style="color:#161616;font-size:16px;font-weight: 500;display:inline;" id="menuTabs">Logout</p>
+        </ion-col>
+      </ion-row>
+    </ion-menu-toggle> -->
+
+    <ion-row style="background-color:white;"><ion-col></ion-col></ion-row>
+    <div class="line"></div>
+    <ion-row style="background-color:white;"><ion-col></ion-col></ion-row>
+
+  </ion-content>
+</ion-menu>
+
+<ion-app>
+  <ion-router-outlet id="main-content"></ion-router-outlet>
+</ion-app>

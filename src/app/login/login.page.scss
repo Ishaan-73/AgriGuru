@@ -1,0 +1,29 @@
+.custom-select {
+    --background: #E7E8ED;
+    border-radius: 10px;
+    color: black;
+  }
+  
+  .custom-select-selected {
+    --background: #D5EFEE ;
+    border: 2px solid #188F79;
+    border-radius: 10px;
+    color: #188F79;
+  }
+
+  .backButton{
+    background-color: white;
+    color:black;
+    width: 40px;
+    height: 40px;
+    font-size: larger;
+    margin-top: 20px;
+  }
+
+
+  :host ion-grid {
+    margin:0;
+    padding:0;
+}
+
+  
